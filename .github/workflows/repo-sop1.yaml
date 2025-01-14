@@ -6,9 +6,6 @@ on:
       - "*"
     tags:
       - "*"
-  push:
-    branches:
-      - "*"
 
 jobs:
   validate-name:
@@ -51,5 +48,3 @@ jobs:
           fi
 
           echo "Repository name '$REPO_NAME' is valid."
-
-   
