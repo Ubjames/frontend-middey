@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <button>show nav</button>
+    <nav>
+    <span>X</span>
+    </nav>
+
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        background: green;
+        width: 300px;
+        height: 100vh;
+        overflow: hidden;
+        transition: ease-in-out 400ms;
+        transform: translateX(-100%);
+
+    }
+    nav > span {
+        margin-left:90%;
+        margin-top:50px;
+        cursor: pointer;
+    }
+</style>
+<script>
+//function contructors
+let open = document.querySelector('button');
+let close = document.querySelector('span');
+let nav = document.querySelector('nav');
+open.addEventListener('click',()=>{
+    nav.style.transform = 'translateX(0%)';
+})
+close.addEventListener('click',()=>{
+    nav.style.transform = 'translateX(-100%)';
+})
+document.body.addEventListener('click',(e)=>{
+    let clientX = e.clientX;
+    if(clientX >300){
+        nav.style.transform = 'translateX(-100%)';
+    }
+
+
+})
+
+</script>
+</html>

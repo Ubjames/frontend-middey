@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        background: #000;
+        height: 100vh;
+        display: flex; justify-content: center; align-items: center;
+    }
+
+    .clock-cont span{
+       width: 85px; height: 63px; display: inline-flex;justify-content: center;align-items: center;
+    }
+    .clock-cont{
+        display: flex; justify-content: center; align-items: center; gap: 5px;
+         color: rgb(0, 254, 38);
+        border: 2px solid grey;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        width: 500px; height: 150px; border-radius: 10px;
+        font-size: 3rem; 
+    }
+
+</style>
+
+<body>
+    <div class="clock-cont" id="clock-cont">
+        <span>02</span>:
+        <span>30</span>:
+        <span>60</span>
+        <span>PM</span>
+    </div>
+   
+</body>
+
+<script src="script.js"></script>
+</html>

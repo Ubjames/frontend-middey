@@ -1,0 +1,32 @@
+.parent{
+    display: flex;
+    border: 1px solid red;
+    height: 700px;
+
+    /*for horizonatl movement use=> justify-content: flex-start, center, flex-end, space-between, space-evenly, space-around*/
+    justify-content: space-between;
+
+
+    /* for veritical movemnent use => align-items: center,flext-start,flex-end*/
+    align-items: center;
+
+    gap:10px;
+    /* flex-direction: column; */
+}
+
+.child:first-child{
+    background-color:red !important ;
+}
+.child:last-child{
+    background-color:yellowgreen !important ;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+
+}
+
+.sub3{
+    display: flex;
+}

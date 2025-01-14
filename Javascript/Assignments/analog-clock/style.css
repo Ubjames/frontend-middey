@@ -1,0 +1,46 @@
+*{
+    margin: 0;padding: 0;
+}
+
+body{
+    background: #000;
+    height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.clock-cont > img{
+    width: 102%; height: 102%; object-fit: cover;
+}
+.clock-cont > div{
+  position: absolute;
+}
+.center-circle{
+    width: 20px; height: 20px; border-radius: 50px; background: #353434; z-index: 5;
+}
+
+.sec{
+   width: 4px; height: 10rem; border-radius: 50px; background: #cf0000;
+   bottom:50%;
+   transform: rotate(6deg); 
+   transform-origin: bottom;
+}
+.min{
+    width: 7px; height: 9rem; border-radius: 50px; background: #292a2b;
+    bottom:50%;
+    transform: rotate(60deg); 
+    transform-origin: bottom;
+    
+}
+.hour{
+    width: 10px; height: 7rem; border-radius: 50px; background: #292a2b;
+    bottom:50%;
+    transform: rotate(120deg); 
+    transform-origin: bottom;
+    transition: ease 1s rotate;
+}
+
+.clock-cont{
+    display: flex; justify-content: center; align-items: center;
+    width: 400px; height:400px; overflow: hidden; border-radius: 50%;
+
+}

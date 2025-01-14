@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style_flexbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css"
+        integrity="sha512-eBNnVs5xPOVglLWDGXyZnZZ2K2ixXhR/3aECgCpFnW2dGCd/yiqXZ6fcB3BubeA91kM6NX234b6Wrah8RiYAPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .parent div:nth-child(even) {
+        background-color: rgb(0, 0, 223);
+        color: #c9c9c9;
+    }
+
+    .parent div:nth-child(odd) {
+        background-color: rgba(0, 119, 255, 0.624);
+    }
+</style>
+
+<body>
+    <h1>Working with Flexboxes</h1>
+
+    <div class="parent">
+
+        <div class="sub">
+            <div class="child">First Child</div>
+            <div class="child"></div>
+        </div>
+
+        <div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+
+        <div class="sub3">
+            <div class="child">Third Child</div>
+            <div class="child"></div>
+            <div class="child">Last Child</div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

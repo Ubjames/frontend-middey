@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* this line is optional as it's the same by default as long the 'body' element is concern*/
+    position: relative;
+}
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+
+    /* The following lines are only applicable to abosulte elements */
+
+    top: 0;/*this means start from the very top*/
+
+    left: 0;/*this means start from the very begining (left) can also be right as well*/
+
+    z-index: -1;
+}
+
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+}
+
+
+.info p {
+    color:#e4e4e4;
+}
+
+.info h2 {
+    font-size: 3rem;
+}
+
+.info {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    /* Do not use this except you fully understand it - instead use your normal flex approches */
+    max-width: 700px;
+    margin-inline: auto;
+
+}
+
+.info .btn {
+    background-color: #ed5113;
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+
+/* the asterisk sign here means all. by doing this you're saying, select all the elements inside info - use it cautiously. */
+.info * {
+    /* 
+    hexadecimal color code; e.g #656ace, #ffffff(same as white), #000000(same as black).
+    This color codes CAN only be 3 or 6 values
+    */
+    color: #ffffff;
+}

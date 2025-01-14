@@ -1,0 +1,38 @@
+*{
+    padding: 0;margin: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav{
+    background-color: black;
+
+
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px; */
+
+    
+
+     /* write anything here urgwurh jjeifhgs hydfh*/
+
+     
+}
+
+.nav li{
+   color: #fff; 
+   display: inline-block;
+/* border: 1px solid ; */
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   cursor: pointer;
+
+}
+
+.nav li:hover{
+    background-color: #fff;
+    color: #000;
+}
